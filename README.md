@@ -41,7 +41,7 @@ The dataset contains segmented single-cell microscopic blood smear images belong
 - Holdout testing set creation  
 - Model training on GPU  
 - Validation and performance evaluation  
-- Real image upload prediction system
+- Custom blood smear image upload prediction system
 
 ---
 
@@ -76,7 +76,7 @@ The dataset contains segmented single-cell microscopic blood smear images belong
 - Recall: 94.51%
 - F1 Score: 91.62%
 
-The model was optimized to prioritize high recall for leukemia detection, which is important in medical screening applications.
+The model was optimized to prioritize high recall for leukemia detection, High recall is important in leukemia screening because missing a positive cancer case can be more critical than a false alert.
 
 ---
 
@@ -95,6 +95,16 @@ These results indicate strong generalization performance on previously unseen bl
 - Healthy predicted as Leukemia: 286
 - Leukemia predicted as Healthy: 133
 - Correct Leukemia Predictions: 2291
+
+## Results Visualization
+
+- ROC Curve
+
+<img width="790" height="590" alt="download (3)" src="https://github.com/user-attachments/assets/eca41761-a13a-4bfd-af3e-5475c3dcfb5f" />
+
+- Confusion Matrix
+
+<img width="666" height="590" alt="download (2)" src="https://github.com/user-attachments/assets/9a5fdd98-5f1c-41cf-a6d0-1002a20e2a2a" />
 
 
 ## Future Improvements
