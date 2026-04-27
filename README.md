@@ -45,12 +45,6 @@ The dataset contains segmented single-cell microscopic blood smear images belong
 
 ---
 
-## Performance
-
-The trained model achieved strong classification performance on unseen validation and holdout samples with high recall and strong overall discrimination ability.
-
----
-
 ## Features
 
 - Blood smear image classification  
@@ -73,6 +67,35 @@ The trained model achieved strong classification performance on unseen validatio
 - Seaborn
 
 ---
+
+## Model Performance
+
+- ROC-AUC: 92.04%
+- Accuracy: 87.98%
+- Precision: 88.90%
+- Recall: 94.51%
+- F1 Score: 91.62%
+
+The model was optimized to prioritize high recall for leukemia detection, which is important in medical screening applications.
+
+---
+
+## Unseen Test Performance
+
+- Accuracy: 89.50%
+- F1 Score: 89.95%
+
+These results indicate strong generalization performance on previously unseen blood smear cell images.
+
+---
+
+## Confusion Matrix Summary
+
+- Correct Healthy Predictions: 777
+- Healthy predicted as Leukemia: 286
+- Leukemia predicted as Healthy: 133
+- Correct Leukemia Predictions: 2291
+
 
 ## Future Improvements
 
