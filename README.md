@@ -3,6 +3,7 @@
 ## Overview
 
 This project focuses on automated detection of **Acute Lymphoblastic Leukemia (ALL)** from microscopic blood smear images using deep learning.
+This model demonstrates the potential of AI-assisted screening systems for faster leukemia detection in resource-limited settings.
 
 A transfer learning approach was implemented using **ConvNeXt Large** to classify blood cell images into:
 
