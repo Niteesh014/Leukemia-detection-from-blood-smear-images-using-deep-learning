@@ -1,0 +1,43 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+*.h5
+
+# Logs
+*.log
+
+# Dataset folders
+data/
+dataset/
+datasets/
+
+# Images generated during training
+runs/
+outputs/
+results/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Google Colab
+/content/
+
+# IDE files
+.vscode/
+.idea/
