@@ -170,15 +170,19 @@ Instead of defaulting to 0.5, the optimal classification threshold was found usi
 
 ### Training Curves
 
-![Training Curves](results/training_curves.png)
+![Training Curves](training_curves.png)
 
 ### Evaluation Results
 
-![Evaluation](results/evaluation_results.png)
+![Evaluation](evaluation_results.png)
 
 ### Holdout Evaluation
 
-![Holdout](results/holdout_evaluation.png)
+![Holdout](holdout_evaluation.png)
+
+### TTA Results
+
+![TTA Results](tta_results.png)
 
 ---
 
@@ -192,7 +196,7 @@ All models trained on the same data with the same loss function and augmentation
 | ResNet50 | 86.00% | 90.97% | 86.00% | ~25M | 10 |
 | **ConvNeXt Large (Ours)** | **90.00%** | **96.13%** | **99.00%** | ~196M | 25 |
 
-![Baseline Comparison](results/baseline_comparison.png)
+![Baseline Comparison](baseline_comparison.png)
 
 > **Note:** Baselines were trained for 10 epochs for computational efficiency. A fair full-epoch comparison would likely narrow the F1 gap, but the AUC and Recall advantages of ConvNeXt Large are consistent with its architectural superiority for fine-grained medical image classification.
 
@@ -206,7 +210,7 @@ Gradient-weighted Class Activation Mapping (Grad-CAM) visualizes which regions o
 
 ### Correct Predictions
 
-![Grad-CAM Correct](results/gradcam_correct_fixed.png)
+![Grad-CAM Correct](gradcam_correct_fixed.png)
 
 **Observations:**
 - **ALL (Leukemia):** Model attends to **irregular nuclear chromatin patterns** and **cell membrane protrusions** — exactly the morphological features hematologists use for diagnosis
@@ -214,7 +218,7 @@ Gradient-weighted Class Activation Mapping (Grad-CAM) visualizes which regions o
 
 ### Error Analysis
 
-![Grad-CAM Errors](results/gradcam_wrong_fixed.png)
+![Grad-CAM Errors](gradcam_wrong_fixed.png)
 
 **Understanding model failures:**
 - **Missed cancer (P(ALL)=0.231):** The leukemia cell had unusually round morphology resembling a healthy cell. Model attention scattered to background — a genuinely ambiguous case
